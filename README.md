@@ -3,7 +3,7 @@
 # Teste Kamba Intern - Devs Mobile, Frontend, Web
 O teste deve ser realizado em **Android, iOS** ou qualquer outro Framework JavaScript como **Angular, React, Vue**, etc., a escolha reflete apenas em estar nas categorias **Mobile, Frontend e Web**.
 
-O Candidato deve fazer um ***Fork*** deste repositório e soliciar um ***Pull Request***, **com o seu nome, contacto telefónico e e-mail na descrição**, para nossa avaliação.
+O Candidato deve fazer um ***Fork*** deste repositório e solicitar um ***Pull Request***, **com o seu nome, contacto telefónico e e-mail na descrição**, para nossa avaliação.
 
 **Dev Mobile:** A solução deve ser implementada usando Android ou iOS apenas. Deve possuir Telas UI.
 
