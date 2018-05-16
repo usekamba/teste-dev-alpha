@@ -3,7 +3,7 @@
 O teste pode ser feita em qualquer linguagem de programação da sua escolha. 
 
 ## Listar transações
-Listar as transações de um usuário. Deves fazer uma requisição ao API e retornar as transações. 
+Listar as transações de um usuário. Deves fazer uma requisição ao API e retornar as transações em formato json. 
 url da API: https://kamba-api-staging.herokuapp.com/v1/users/activities
 
 Para retornar as transações use um ``` HTTP header ``` com *Authorization*: ```Token 7p2RbUyWWCq34cLd8QJJFQtt```
