@@ -12,7 +12,7 @@ O Candidato deve fazer um ***Fork*** deste repositório e solicitar um ***Pull R
 **Dev Frontend/Web:** A solução deve ser implementada usando um Framework JavaScript como **Angular, React, Vue**, entre outros. Frameworks no Layout também são permitidos, Bootstrap, Zurb, entre outros.
 
 ## URL Base a ser usada no Teste:
-- Testes: https://kamba-api-staging.usekamba.com/v1/transactions
+- Testes: `https://kamba-api-staging.herokuapp.com/v1/transactions`
 - Solicitação HTTP POST
 
 Deve passar parâmetros ao Header da Solicitação POST. Por exemplo:
