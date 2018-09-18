@@ -1,7 +1,8 @@
 ![Kamba](app-logo.png)
 
-# Teste Alpha - Devs Mobile Android ou iOS, Dev Web Front-end, Dev Web Fullstack (Ruby On Rails/PHP/Java)
+# Teste Alpha - Devs 
 
+## Dev Mobile Android ou iOS, Dev Web Front-end, Dev Web Fullstack (Ruby On Rails/PHP/Java)
 O teste deve ser realizado em uma destas linguagens/plataformas **Android (Java/Kotlin ganha mais pontos), iOS (Swift, porque vocês são raros em Angola?/ganha mais pontos só de aparecer aqui), Ruby On Rails (Web Fullstack/ganha mais pontos), PHP** ou qualquer outro Framework JavaScript como **Angular, React, Vue**, etc., a escolha reflete apenas em estar nas categorias **Mobile, Front-end, Web Fullstack (Ruby On Rails)**.
 
 O Candidato deve fazer um ***Fork*** deste repositório e submeter um ***Pull Request***, **com o seu nome, contacto telefónico e e-mail na descrição** para nossa avaliação.
