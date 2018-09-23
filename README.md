@@ -14,7 +14,7 @@ O Candidato deve fazer um ***Fork*** deste repositório e submeter um ***Pull Re
 ## API
 
 URL Base a ser usada no Teste:
-- Testes: GET `https://kamba-api-staging.herokuapp.com/v1/activities`
+- Testes: GET `https://kamba-api-staging.herokuapp.com/v1/users/activities`
 
 Deve passar parâmetros ao Header da Solicitação GET. Por exemplo:
 
@@ -22,7 +22,7 @@ A solicitação **HTTP GET** deve fornecer um Header `Authorization: Token TOKEN
 
 A URL a seguir mostra a listagem de resultados das atividades de transações de um Usuário em formato JSON que você precisará exibir em uma lista e em seguida poder selectionar um item da lista para mostrar sua informação individual.
 
-**Realizar o `GET` para `https://kamba-api-staging.herokuapp.com/v1/activities` retorna:**
+**Realizar o `GET` para `https://kamba-api-staging.herokuapp.com/v1/users/activities` retorna:**
 ```json
 [
     {
