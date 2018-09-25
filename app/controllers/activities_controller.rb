@@ -6,7 +6,6 @@ class ActivitiesController < ApplicationController
   def index
     @activities = Activity.all_activities
     render json: @activities
-
   end
 
 end
