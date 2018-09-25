@@ -3,7 +3,7 @@ class ApplicationRecord < ActiveRecord::Base
   include HTTParty
 
   # Retorna dos os itens que estao na API TESTE
-  def activities
+  def self.all_activities
     HTTParty.get("https://kamba-api-staging.herokuapp.com/v1/users/activities", headers: {"Authorization" => "Token token=\"VS7elyzN7ZqMNcQmQA5Cjgtt\""})
   end
 
