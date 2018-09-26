@@ -14,6 +14,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'httparty', '~> 0.13.7'
+gem 'rack-cors'
+gem 'rack-attack'
+gem 'foreman', '~> 0.82.0'
 
 #gem 'bootstrap'
 #gem 'jquery-rails'
