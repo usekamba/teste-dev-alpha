@@ -25,10 +25,12 @@ class ListsContainer extends Component {
         console.log(this.state.activities);
 
         return (
-            <div className="">
-                {this.state.activities.map( activity => {
-                    return (<Activity activity={activity} key={activity.id} />)
-                })}
+            <div className="container">
+                <div className="row">
+                    {this.state.activities.map( activity => {
+                        return (<Activity activity={activity} key={activity.id} />)
+                    })}
+                </div>
             </div>
         )
     }
