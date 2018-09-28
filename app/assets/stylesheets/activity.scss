@@ -1,0 +1,22 @@
+// Place all the styles related to the activity controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+  	body {
+  		background: linear-gradient(
+  			to top left,
+  			#45fe5b, white
+  			);
+      background-size: cover;
+  		}
+
+  	header, .main, footer {
+
+  		padding-left: 300px; 
+  	} 
+  	@media only screen and (max-width: 992px) {
+  		header, .main, footer{
+  			padding-left: 0;
+  		} 
+  	}
