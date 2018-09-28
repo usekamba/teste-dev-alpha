@@ -1,0 +1,221 @@
+<nav class="grey darken-4 nav wrapper">
+  	<div class="container">
+  		<a class="brand-logo center">Kamba</a>
+  		<a href="#" class="button-collapse show-on-large " data-activates="sidenav">
+  			<i class="material-icons">menu</i> </a>
+  		<!--DESKTOP MENU -->
+  		<ul class="right hide-on-small-and-down collection" style="margin:0; border:0 solid transparent">
+  		</ul>
+  	</div>
+  </nav>
+
+  <!--LEFT-SIDE SIDE-NAV MENU -->
+  <ul class=" sidenav fixed light-green accent-1" id="sidenav">
+  	<li>
+  		<div class="user-view">
+  			<div class="background">
+  				<%= image_tag'03.jpg', class:'responsive-img' %>
+  			</div>
+  		<a href="">
+  			<%= image_tag'kip.jpg', class:'circle' %>		
+  		</a>
+  		<span class="white-text name">José Júnior</span>
+  		<span class="white-text email">josejunior.jnj08@gmail.com</span>
+  	</li>
+
+  	<li>
+  		<a href="">
+  			<i class="material-icons green-text text-darken-4 ">dashboard</i>Dashboard
+  		</a>
+  	</li>
+
+  	<li>
+  		<a href="">
+  			<i class="material-icons green-text text-darken-4">credit_card</i>Bank Transations
+  		</a>
+  	</li>
+
+  	<li>
+  		<a href="">
+  			<i class="material-icons green-text text-darken-4">phonelink_setup</i>Mobile Operators
+  		</a>
+  	</li>
+
+  	<li>
+  		<a href="">
+  			<i class="material-icons green-text text-darken-4 ">trending_up</i>Analitcs
+  		</a>
+  	</li>
+
+  	<li>
+  		<a href="">
+  			<i class="material-icons green-text text-darken-4">android</i>Apps
+  		</a>  		
+  	</li>
+  	</div>
+	<div class="divider green darken-3"></div>
+
+	<li>
+  		<a href="">
+  			<i class="material-icons green-text text-darken-4">help</i>Help
+  		</a>
+  	</li>
+
+  	<li>
+  		<a href="">
+  			<i class="material-icons green-text text-darken-4">exit_to_app</i>Logout
+  		</a>  		
+  	</li>
+
+  </ul>
+
+<!--MAIN -->
+
+<div id="main" class="container" >
+
+<div class="row">
+	<div class="col m6 s12 l6">
+	 <button class="btn waves-effect waves-light green accent-4 tooltipped" v-on:click="getActivities()" style="margin-top: 15px;" data-tooltip="Click to Get Activities" data-position="right">Get Activities</button>
+	<ul class="collection with-header">
+		<li class="collection-header  green accent-4">
+			<h5 class="white-text ">ACTIVITIES</h5>
+		</li>
+		<li class="collection-item">
+				
+			<li class="collection-item avatar" v-for="item in list">
+				 <span>Id : </span>{{item.id}} <br> <span>Phone Number : </span> {{item.phone_number}}
+            		<i class="material-icons circle green ">important_devices</i>
+              <p>Status : {{item.status}} <br>
+              Transaction Type : {{item.transaction_type}}
+            </p>
+            	<p>Recharge Price : {{item.recharge_price}} <br>
+              	Mobile Operator Type : {{item.mobile_operator_type}}
+            </p>
+            <a href="" class="secondary-content"><i class="material-icons">send</i></a>
+        </li>
+			
+			<br>
+			<span>
+				<a href=""><i class="material-icons tiny blue-text text-darken-4">edit</i></a> Edit |
+				<i class="material-icons tiny red-text text-darken-4">close</i> Delete |
+				<i class="material-icons tiny green-text text-darken-4">check</i> Save 
+			</span>
+		</li>
+		
+		
+	</ul>
+	</div>
+
+	<!--json Panel-->
+	<div class="col m6 s12 l6">
+	
+	<ul class="collection with-header">
+		<li class="collection-header green accent-4">
+			<h5 class="white-text">JSON</h5>
+		</li>
+		<li class="collection-item">
+			<pre>
+          {{ $data | json}}
+        </pre>
+		</li>
+	</ul>
+	</div>
+	</div>
+</div>
+
+<!--Fixed button Right Bottom-->
+<div class="fixed-action-btn toolbar " >
+	<a class="btn-floating btn-large pulse green darken-4 white-text tooltipped" data-tooltip="Click to Display Options" data-position="top">
+		<i class="material-icons">settings</i>
+	</a>
+	<ul>
+				
+		<li>
+			<a href="" class="btn-floating tooltipped" data-tooltip="Mobile Operators" data-position="top">
+				<i class="material-icons">phonelink_setup</i>
+			</a>
+		</li>
+		<li>
+			<a href="" class="btn-floating tooltipped" data-tooltip="Analitcs" data-position="top">
+				<i class="material-icons">trending_up</i>
+			</a>
+		</li>
+		<li>
+			<a href="" class="btn-floating tooltipped" data-tooltip="Test Application" data-position="top">
+				<i class="material-icons">android</i>
+			</a>
+		</li>
+		<li>
+			<a href="" class="btn-floating tooltipped" data-tooltip="Click to Show Bank Transations" data-position="top">
+				<i class="material-icons">credit_card</i>
+			</a>
+		</li>
+		<li>
+			<a href="" class="btn-floating tooltipped" data-tooltip="Exit" data-position="top">
+				<i class="material-icons">exit_to_app</i>
+			</a>
+		</li>
+	</ul>
+
+</div>
+
+<!--CUSTOM Naterialize js & jquery-->
+<script >
+	document.addEventListener('DOMContentLoaded', function(){
+		var elems = document.querySelectorAll('.fixed-action-btn');
+		var instances = M.FloatingActionButton.init(elems, {
+			toolbarEnabled:true
+		});
+	});
+</script>
+<script >
+$(document).ready(function() {
+
+$('.button-collapse').sideNav()
+});
+
+</script>
+
+<!--VUEjs AJAX with AXIOS-->
+<script type="text/javascript" >
+    var url = 'https://kamba-api-staging.herokuapp.com/v1/users/activities';
+  	new Vue({
+          el: '#main',
+          created: function(){
+            this.getActivities();
+          },
+          data: {
+            list: [] 
+          },
+          methods: {
+              getActivities: function(){
+                axios.get(url, {method:'GET',
+                 headers: {
+                  'Content-Type': 'application/json', 
+                  'authorization': 'Token VS7elyzN7ZqMNcQmQA5Cjgtt'
+                   } 
+                  }).then(response => {
+                    this.list = response.data
+                  });
+              }
+          }       
+     });
+ </script>
+
+
+
+
+
+
+
+
+    
+    
+  
+        
+
+
+     
+          
+
+    
