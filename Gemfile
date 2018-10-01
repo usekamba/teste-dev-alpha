@@ -11,21 +11,12 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'httparty', '~> 0.13.7'
 gem 'rack-cors'
 gem 'rack-attack'
 gem 'foreman', '~> 0.82.0'
 
-#gem 'bootstrap'
-#gem 'jquery-rails'
-#gem 'react-rails'
-#gem "font-awesome-rails"
-
-group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
