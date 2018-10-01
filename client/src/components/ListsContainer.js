@@ -14,15 +14,12 @@ class ListsContainer extends Component {
     componentDidMount() {
         axios.get('http://localhost:3001/activities.json')
         .then(response => {
-            console.log(response);
-
             this.setState({activities: response.data})
         })
         .catch(error => console.log(error))
     }
 
     render() {
-        console.log(this.state.activities);
 
         return (
             <div className="container">
