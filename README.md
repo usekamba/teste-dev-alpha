@@ -1,3 +1,21 @@
+#================================================================================================
+#===============  UPDATE TESTE, PASSOS PARA RODAR A APP DEPOIS DAS ACTUALIZACOES  ===============
+#================================================================================================
+cd teste-dev-alpha
+bundle install
+
+Dentro da pasta teste-dev-alpha, vamos executar os seguintes comandos:
+cd client
+yarn install
+
+Finalmente:
+foreman start 
+
+Acesse http://localhost:3000/
+#================================================================================================
+#================================================================================================
+
+
 Dev Web Fullstack (Ruby On Rails)
 Boas
 
