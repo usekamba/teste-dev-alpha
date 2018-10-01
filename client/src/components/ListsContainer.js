@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Activity from './Activity';
+import { URL_API_V1 } from '../services/actions';
 
 class ListsContainer extends Component {
 
@@ -12,7 +13,7 @@ class ListsContainer extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:3001/activities.json')
+        axios.get(`${URL_API_V1}/activities.json`)
         .then(response => {
             this.setState({activities: response.data})
         })
