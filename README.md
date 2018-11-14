@@ -1,4 +1,8 @@
-![Kamba](app-logo.png)
+﻿![Kamba](app-logo.png)
+
+Hernani Neto
+00244996896371
+hernaniprogramacao@gmail.com
 
 # Teste Kamba Intern - Devs Mobile, Frontend, Web
 O teste deve ser realizado em **Android, iOS** ou qualquer outro Framework JavaScript como **Angular, React, Vue**, etc., a escolha reflete apenas em estar nas categorias **Mobile, Frontend e Web**.

@@ -1,0 +1,56 @@
+
+
+<div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="container d-flex justify-content-between">
+    <a href="#" class="navbar-brand d-flex align-items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+      <strong>Activities</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</div>
+</header>
+
+<div class="container">
+    <h2>Payments</h2>
+    <div class="row">
+        <% @payment.each do |p| %>            
+            
+            <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Pagamento</h5>
+                <p class="card-text">To: <%= p["to"]["firstname"] %> <%=p["to"]["firstname"] %></p>
+                <p class="card-text">Amount: <%= p["amount"] %></p>
+                <p class="card-text">Description: <%= p["description"] %></p>
+                <a href="#" class="btn btn-primary">Mais detalhes</a>
+            </div>
+            </div>
+        <%end%>
+    </div>
+       
+</div>
+
+<div class="container">    
+    <h2>Withdrawal</h2>
+    <div class="row">
+        <% @withdrawal.each do |p| %>            
+            
+            <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">WITHDRAWAL</h5>
+                <p class="card-text">Amount: <%= p["amount"] %></p>
+                <p class="card-text">Bank: <%= p["bank_account"]["bank"]["name"] %></p>                
+                
+                <p class="card-text">Status: <%= p["status"] %></p> 
+
+                                
+                <a href="#" class="btn btn-primary">Mais detalhes</a>
+            </div>
+            </div>
+        <%end%>
+    </div> 
+    
+</div>
+
