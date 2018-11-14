@@ -1,4 +1,8 @@
-![Kamba](app-logo.png)
+﻿![Kamba](app-logo.png)
+
+Hernani Neto
+00244996896371
+hernaniprogramacao@gmail.com
 
 # Teste Alpha - Devs 
 
