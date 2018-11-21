@@ -2,17 +2,22 @@ package com.acelabs.kambaapi.model;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.acelabs.kambaapi.R;
 import com.acelabs.kambaapi.controller.DetailActivity;
+import com.squareup.picasso.Picasso;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -35,8 +40,34 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull MainAdapter.ViewHolder holder, int position) {
-        holder.mTransaction_type.setText(mActivities.get(position).getTransaction_type());
+        holder.mTransaction_typeTv.setText(mActivities.get(position).getTransaction_type());
 
+        if(mActivities.get(position).getTransaction_type().equals("RECHARGE")){
+            holder.mAmountTv.setText(String.valueOf(mActivities.get(position).getAmount_paid() + " Kz"));
+        }else {
+            holder.mAmountTv.setText(String.valueOf(mActivities.get(position).getAmount()) + " Kz");
+        }
+
+        if(mActivities.get(position).getStatus().equals("CANCELLED")){
+            holder.mStatusTv.setText("Cancelled");
+            holder.mStatusTv.setTextColor(Color.parseColor("#EF5350"));
+            holder.mToTv.setText("Cancelled in " + mActivities.get(position).getCreated_at());
+
+        }else if(mActivities.get(position).getStatus().equals("PAID")){
+            holder.mStatusTv.setText("Paid");
+            holder.mStatusTv.setTextColor(Color.parseColor("#00E676"));
+            holder.mToTv.setText("Paid in " + mActivities.get(position).getCreated_at());
+
+        }else if (mActivities.get(position).getStatus().equals("RECHARGED")) {
+            holder.mStatusTv.setText("Recharged");
+            holder.mStatusTv.setTextColor(Color.parseColor("#00E676"));
+            holder.mToTv.setText("Recharged in " + mActivities.get(position).getCreated_at());
+        }
+
+
+        Picasso.get()
+               .load(R.drawable.kamba_logo)
+               .into(holder.mImageView);
     }
 
     @Override
@@ -46,12 +77,17 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView mTransaction_type;
+        public ImageView mImageView;
+        public TextView mTransaction_typeTv, mAmountTv, mStatusTv, mToTv;
 
         public ViewHolder(View itemView) {
                         super(itemView);
 
-                    mTransaction_type = (TextView) itemView.findViewById(R.id.transaction_type);
+                    mImageView = (ImageView) itemView.findViewById(R.id.kamba_logo);
+                    mTransaction_typeTv = (TextView) itemView.findViewById(R.id.transaction_type);
+                    mAmountTv = (TextView) itemView.findViewById(R.id.amount);
+                    mStatusTv = (TextView) itemView.findViewById(R.id.status);
+                    mToTv = (TextView) itemView.findViewById(R.id.to);
 
                     itemView.setOnClickListener(new View.OnClickListener() {
                             @Override

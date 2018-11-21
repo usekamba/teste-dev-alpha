@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mLayoutManager = new LinearLayoutManager(this);
-        
+
         DividerItemDecoration itemDecoration = new DividerItemDecoration(this, mLayoutManager.getOrientation());
 
         mRecyclerView.setHasFixedSize(true);
