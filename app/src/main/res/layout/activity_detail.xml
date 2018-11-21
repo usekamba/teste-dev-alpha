@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.DetailActivity">
+
+    <!-- Payment Screen Layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/payment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <TextView
+                android:id="@+id/to_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="To:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/to_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Adilson Sebastiao Clemente"
+                app:layout_constraintStart_toEndOf="@+id/to_lbl"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/amount_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Amount:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/to_lbl" />
+
+            <TextView
+                android:id="@+id/amount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="900"
+                app:layout_constraintStart_toEndOf="@+id/amount_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/to_txt" />
+
+            <TextView
+                android:id="@+id/description_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Description:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/amount_lbl" />
+
+            <TextView
+                android:id="@+id/description_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Teste"
+                app:layout_constraintStart_toEndOf="@+id/description_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/amount_txt" />
+
+            <TextView
+                android:id="@+id/date_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Date:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_lbl" />
+
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="2018-10-08"
+                app:layout_constraintStart_toEndOf="@+id/date_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/description_txt" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Withdrawal Screen Layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/withdrawal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+            <TextView
+                android:id="@+id/withdrawal_amount_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Amount:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/withdrawal_amount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="100"
+                app:layout_constraintStart_toEndOf="@+id/withdrawal_amount_lbl"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/withdrawal_bank_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Bank:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/withdrawal_amount_lbl" />
+
+            <TextView
+                android:id="@+id/withdrawal_bank_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Banco Millennium Angola"
+                app:layout_constraintStart_toEndOf="@+id/withdrawal_bank_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/withdrawal_amount_txt" />
+
+            <TextView
+                android:id="@+id/withdrawal_status_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Status:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/withdrawal_bank_lbl" />
+
+            <TextView
+                android:id="@+id/withdrawal_status_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="CANCELED"
+                app:layout_constraintStart_toEndOf="@+id/withdrawal_status_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/withdrawal_bank_txt" />
+
+            <TextView
+                android:id="@+id/withdrawal_date_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Date:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/withdrawal_status_lbl" />
+
+            <TextView
+                android:id="@+id/withdrawal_date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="2018-10-08"
+                app:layout_constraintStart_toEndOf="@+id/withdrawal_date_lbl"
+                app:layout_constraintTop_toBottomOf="@+id/withdrawal_status_txt" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Deposit Screen Layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/deposit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/deposit_amount_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Amount:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/deposit_amount_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="100"
+            app:layout_constraintStart_toEndOf="@+id/deposit_amount_lbl"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/deposit_payment_method_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Payment Method:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_amount_lbl" />
+
+        <TextView
+            android:id="@+id/deposit_payment_method_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Depósito Bancário"
+            app:layout_constraintStart_toEndOf="@+id/deposit_payment_method_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_amount_txt" />
+
+        <TextView
+            android:id="@+id/deposit_to_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="To:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_payment_method_lbl" />
+
+        <TextView
+            android:id="@+id/deposit_to_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="USEKAMBA, LDA."
+            app:layout_constraintStart_toEndOf="@+id/deposit_to_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_payment_method_lbl" />
+
+        <TextView
+            android:id="@+id/deposit_account_type_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Account type:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_to_lbl" />
+
+        <TextView
+            android:id="@+id/deposit_account_type_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Conta Empresa"
+            app:layout_constraintStart_toEndOf="@+id/deposit_account_type_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_to_txt" />
+
+        <TextView
+            android:id="@+id/deposit_bank_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Bank: "
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_account_type_lbl" />
+
+        <TextView
+            android:id="@+id/deposit_bank_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Banco Millennium Angola"
+            app:layout_constraintStart_toEndOf="@+id/deposit_bank_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_account_type_lbl" />
+
+        <TextView
+            android:id="@+id/deposit_status_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Status:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_bank_lbl" />
+
+        <TextView
+            android:id="@+id/deposit_status_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="CANCELED"
+            app:layout_constraintStart_toEndOf="@+id/deposit_status_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_bank_txt" />
+
+        <TextView
+            android:id="@+id/deposit_date_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Date:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_status_lbl" />
+
+        <TextView
+            android:id="@+id/deposit_date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="2018-10-08"
+            app:layout_constraintStart_toEndOf="@+id/deposit_date_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/deposit_status_txt" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!-- Recharge Screen Layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/recharge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/recharge_phone_number_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Phone number:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recharge_phone_number_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="999012827"
+            app:layout_constraintStart_toEndOf="@+id/recharge_phone_number_lbl"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/recharge_recharge_price_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Recharge price:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_amount_paid_lbl" />
+
+        <TextView
+            android:id="@+id/recharge_recharge_price_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="900"
+            app:layout_constraintStart_toEndOf="@+id/recharge_recharge_price_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_amount_paid_txt" />
+
+        <TextView
+            android:id="@+id/recharge_mobile_operator_name_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Mobile operator name:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_validity_days_lbl" />
+
+        <TextView
+            android:id="@+id/recharge_mobile_operator_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Unitel"
+            app:layout_constraintStart_toEndOf="@+id/recharge_mobile_operator_name_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_validity_days_txt" />
+
+        <TextView
+            android:id="@+id/recharge_mobile_operator_type_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Mobile operator type:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_mobile_operator_name_lbl" />
+
+        <TextView
+            android:id="@+id/recharge_mobile_operator_type_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Unitel"
+            app:layout_constraintStart_toEndOf="@+id/recharge_mobile_operator_type_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_mobile_operator_name_txt" />
+
+        <TextView
+            android:id="@+id/recharge_amount_of_utts_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Amount of Utts:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_recharge_price_lbl" />
+
+        <TextView
+            android:id="@+id/recharge_amount_of_utts_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="125"
+            app:layout_constraintStart_toEndOf="@+id/recharge_amount_of_utts_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_recharge_price_txt" />
+
+        <TextView
+            android:id="@+id/recharge_validity_days_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Validity days:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_amount_of_utts_lbl" />
+
+        <TextView
+            android:id="@+id/recharge_validity_days_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="30"
+            app:layout_constraintStart_toEndOf="@+id/recharge_validity_days_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_amount_of_utts_txt" />
+
+        <TextView
+            android:id="@+id/recharge_amount_paid_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Amount paid:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_phone_number_lbl" />
+
+        <TextView
+            android:id="@+id/recharge_amount_paid_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="900"
+            app:layout_constraintStart_toEndOf="@+id/recharge_amount_paid_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_phone_number_txt" />
+
+        <TextView
+            android:id="@+id/recharge_status_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Status:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_mobile_operator_type_lbl" />
+
+        <TextView
+            android:id="@+id/recharge_status_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="RECHARGED"
+            app:layout_constraintStart_toEndOf="@+id/recharge_status_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_mobile_operator_type_txt" />
+
+        <TextView
+            android:id="@+id/recharge_date_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Date:"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_status_lbl" />
+
+        <TextView
+            android:id="@+id/recharge_date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="2018-09-27"
+            app:layout_constraintStart_toEndOf="@+id/recharge_date_lbl"
+            app:layout_constraintTop_toBottomOf="@+id/recharge_status_txt" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
