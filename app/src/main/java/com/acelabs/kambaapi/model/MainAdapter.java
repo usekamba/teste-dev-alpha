@@ -25,8 +25,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     private Context context;
     private ArrayList<Activity> mActivities;
-    private String mRedColor = String.valueOf(R.color.cancelledStatusColor);
-    private String mPrimaryColor = String.valueOf(R.color.colorPrimary);
+    private String mRedColor = "#EF5350";
+    private String mPrimaryColor = "#00E676";
 
     public MainAdapter(Context context, ArrayList<Activity> activities){
         this.context = context;
