@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        mRecyclerView = findViewById(R.id.recycler_view);
         mLayoutManager = new LinearLayoutManager(this);
 
         DividerItemDecoration itemDecoration = new DividerItemDecoration(this, mLayoutManager.getOrientation());

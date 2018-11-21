@@ -142,12 +142,12 @@ public class DetailActivity extends AppCompatActivity {
 
     // Initialize Payment screen Layout
     public void initPaymentLayout(){
-        constraintLayout = (ConstraintLayout) findViewById(R.id.payment_layout);
+        constraintLayout = findViewById(R.id.payment_layout);
         constraintLayout.setVisibility(View.VISIBLE);
-        mToTv = (TextView) findViewById(R.id.to_txt);
-        mAmountTv = (TextView) findViewById(R.id.amount_txt);
-        mDescriptionTv = (TextView) findViewById(R.id.description_txt);
-        mDateTv = (TextView) findViewById(R.id.date_txt);
+        mToTv = findViewById(R.id.to_txt);
+        mAmountTv = findViewById(R.id.amount_txt);
+        mDescriptionTv = findViewById(R.id.description_txt);
+        mDateTv = findViewById(R.id.date_txt);
     }
 
     // Set data to Payment layout views
@@ -160,23 +160,23 @@ public class DetailActivity extends AppCompatActivity {
 
     // Hide Payment screen Layout
     public void hidePaymentLayout(){
-        constraintLayout = (ConstraintLayout) findViewById(R.id.payment_layout);
+        constraintLayout = findViewById(R.id.payment_layout);
         constraintLayout.setVisibility(View.INVISIBLE);
     }
 
     // Initialize Recharge screen layout
     public void initRechargeLayout(){
-        constraintLayout = (ConstraintLayout) findViewById(R.id.recharge_layout);
+        constraintLayout = findViewById(R.id.recharge_layout);
         constraintLayout.setVisibility(View.VISIBLE);
-        mPhoneNumberTV = (TextView) findViewById(R.id.recharge_phone_number_txt);
-        mAmountTv = (TextView) findViewById(R.id.recharge_amount_paid_txt);
-        mRechargePrice = (TextView) findViewById(R.id.recharge_recharge_price_txt);
-        mAmountOfUttsTv = (TextView) findViewById(R.id.recharge_amount_of_utts_txt);
-        mValidityDaysTv = (TextView) findViewById(R.id.recharge_validity_days_txt);
-        mMobOperatorNameTv = (TextView) findViewById(R.id.recharge_mobile_operator_name_txt);
-        mMobOperatorTypeTv = (TextView) findViewById(R.id.recharge_mobile_operator_type_txt);
-        mStatusTv = (TextView) findViewById(R.id.recharge_status_txt);
-        mDateTv = (TextView) findViewById(R.id.recharge_date_txt);
+        mPhoneNumberTV = findViewById(R.id.recharge_phone_number_txt);
+        mAmountTv = findViewById(R.id.recharge_amount_paid_txt);
+        mRechargePrice = findViewById(R.id.recharge_recharge_price_txt);
+        mAmountOfUttsTv = findViewById(R.id.recharge_amount_of_utts_txt);
+        mValidityDaysTv = findViewById(R.id.recharge_validity_days_txt);
+        mMobOperatorNameTv = findViewById(R.id.recharge_mobile_operator_name_txt);
+        mMobOperatorTypeTv = findViewById(R.id.recharge_mobile_operator_type_txt);
+        mStatusTv = findViewById(R.id.recharge_status_txt);
+        mDateTv = findViewById(R.id.recharge_date_txt);
     }
 
     // Set data to Recharge layout views
@@ -196,18 +196,18 @@ public class DetailActivity extends AppCompatActivity {
 
     // Hide Recharge screen layout
     public void hideRechargeLayout(){
-        constraintLayout = (ConstraintLayout) findViewById(R.id.recharge_layout);
+        constraintLayout = findViewById(R.id.recharge_layout);
         constraintLayout.setVisibility(View.INVISIBLE);
     }
 
     // Initialize Withdrawal screen layout
     public void initWithdrawalLayout(){
-        constraintLayout = (ConstraintLayout) findViewById(R.id.withdrawal_layout);
+        constraintLayout = findViewById(R.id.withdrawal_layout);
         constraintLayout.setVisibility(View.VISIBLE);
-        mAmountTv = (TextView) findViewById(R.id.withdrawal_amount_txt);
-        mBankTv = (TextView) findViewById(R.id.withdrawal_bank_txt);
-        mStatusTv = (TextView) findViewById(R.id.withdrawal_status_txt);
-        mDateTv = (TextView) findViewById(R.id.withdrawal_date_txt);
+        mAmountTv = findViewById(R.id.withdrawal_amount_txt);
+        mBankTv = findViewById(R.id.withdrawal_bank_txt);
+        mStatusTv = findViewById(R.id.withdrawal_status_txt);
+        mDateTv = findViewById(R.id.withdrawal_date_txt);
     }
 
     // Set data to Withdrawal layout views
@@ -220,21 +220,21 @@ public class DetailActivity extends AppCompatActivity {
 
     // Hide Withdrawal screen layout
     public void hideWithdrawalLayout(){
-        constraintLayout = (ConstraintLayout) findViewById(R.id.withdrawal_layout);
+        constraintLayout = findViewById(R.id.withdrawal_layout);
         constraintLayout.setVisibility(View.INVISIBLE);
     }
 
     // Initialize Deposit screen layout
     public void initDepositLayout(){
-        constraintLayout = (ConstraintLayout) findViewById(R.id.deposit_layout);
+        constraintLayout = findViewById(R.id.deposit_layout);
         constraintLayout.setVisibility(View.VISIBLE);
-        mToTv = (TextView) findViewById(R.id.deposit_to_txt);
-        mAmountTv = (TextView) findViewById(R.id.deposit_amount_txt);
-        mPaymentMethod = (TextView) findViewById(R.id.deposit_payment_method_txt);
-        mAccountType = (TextView) findViewById(R.id.deposit_account_type_txt);
-        mBankTv = (TextView) findViewById(R.id.deposit_bank_txt);
-        mStatusTv = (TextView) findViewById(R.id.deposit_status_txt);
-        mDateTv = (TextView) findViewById(R.id.deposit_date_txt);
+        mToTv = findViewById(R.id.deposit_to_txt);
+        mAmountTv = findViewById(R.id.deposit_amount_txt);
+        mPaymentMethod = findViewById(R.id.deposit_payment_method_txt);
+        mAccountType = findViewById(R.id.deposit_account_type_txt);
+        mBankTv = findViewById(R.id.deposit_bank_txt);
+        mStatusTv = findViewById(R.id.deposit_status_txt);
+        mDateTv = findViewById(R.id.deposit_date_txt);
     }
 
     // Set data to Deposit layout views
@@ -250,7 +250,7 @@ public class DetailActivity extends AppCompatActivity {
 
     // Hide Deposit screen layout
     public void hideDepositLayout(){
-        constraintLayout = (ConstraintLayout) findViewById(R.id.deposit_layout);
+        constraintLayout = findViewById(R.id.deposit_layout);
         constraintLayout.setVisibility(View.INVISIBLE);
     }
 

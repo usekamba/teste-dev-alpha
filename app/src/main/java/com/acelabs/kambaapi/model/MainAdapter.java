@@ -25,6 +25,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
     private Context context;
     private ArrayList<Activity> mActivities;
+    private String mRedColor = String.valueOf(R.color.cancelledStatusColor);
+    private String mPrimaryColor = String.valueOf(R.color.colorPrimary);
 
     public MainAdapter(Context context, ArrayList<Activity> activities){
         this.context = context;
@@ -50,21 +52,21 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
 
         if(mActivities.get(position).getStatus().equals("CANCELLED")){
             holder.mStatusTv.setText("Cancelled");
-            holder.mStatusTv.setTextColor(Color.parseColor("#EF5350"));
+            holder.mStatusTv.setTextColor(Color.parseColor(mRedColor));
             holder.mToTv.setText("Cancelled in " + mActivities.get(position).getCreated_at());
 
         }else if(mActivities.get(position).getStatus().equals("PAID")){
             holder.mStatusTv.setText("Paid");
-            holder.mStatusTv.setTextColor(Color.parseColor("#00E676"));
+            holder.mStatusTv.setTextColor(Color.parseColor(mPrimaryColor));
             holder.mToTv.setText("Paid in " + mActivities.get(position).getCreated_at());
 
         }else if (mActivities.get(position).getStatus().equals("RECHARGED")) {
             holder.mStatusTv.setText("Recharged");
-            holder.mStatusTv.setTextColor(Color.parseColor("#00E676"));
+            holder.mStatusTv.setTextColor(Color.parseColor(mPrimaryColor));
             holder.mToTv.setText("Recharged in " + mActivities.get(position).getCreated_at());
         }
 
-
+        //Loading kamba logo image and setting to the imageview
         Picasso.get()
                .load(R.drawable.kamba_logo)
                .into(holder.mImageView);
@@ -83,11 +85,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         public ViewHolder(View itemView) {
                         super(itemView);
 
-                    mImageView = (ImageView) itemView.findViewById(R.id.kamba_logo);
-                    mTransaction_typeTv = (TextView) itemView.findViewById(R.id.transaction_type);
-                    mAmountTv = (TextView) itemView.findViewById(R.id.amount);
-                    mStatusTv = (TextView) itemView.findViewById(R.id.status);
-                    mToTv = (TextView) itemView.findViewById(R.id.to);
+                    mImageView = itemView.findViewById(R.id.kamba_logo);
+                    mTransaction_typeTv = itemView.findViewById(R.id.transaction_type);
+                    mAmountTv = itemView.findViewById(R.id.amount);
+                    mStatusTv = itemView.findViewById(R.id.status);
+                    mToTv = itemView.findViewById(R.id.to);
 
                     itemView.setOnClickListener(new View.OnClickListener() {
                             @Override
