@@ -27,6 +27,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     private ArrayList<Activity> mActivities;
     private String mRedColor = "#EF5350";
     private String mPrimaryColor = "#00E676";
+    private String date;
+    private String time;
 
     public MainAdapter(Context context, ArrayList<Activity> activities){
         this.context = context;
@@ -50,23 +52,29 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             holder.mAmountTv.setText(String.valueOf(mActivities.get(position).getAmount()) + " Kz");
         }
 
-        if(mActivities.get(position).getStatus().equals("CANCELLED")){
+        if(mActivities.get(position).getStatus().equals("CANCELLED") || mActivities.get(position).getStatus().equals("CANCELED")){
+            date = mActivities.get(position).getCreated_at().substring(0,10);
+            time = mActivities.get(position).getCreated_at().substring(11,19);
             holder.mStatusTv.setText("Cancelled");
             holder.mStatusTv.setTextColor(Color.parseColor(mRedColor));
-            holder.mToTv.setText("Cancelled in " + mActivities.get(position).getCreated_at());
+            holder.mToTv.setText("Cancelled in " + date + " " + time);
 
         }else if(mActivities.get(position).getStatus().equals("PAID")){
+            date = mActivities.get(position).getCreated_at().substring(0,10);
+            time = mActivities.get(position).getCreated_at().substring(11,19);
             holder.mStatusTv.setText("Paid");
             holder.mStatusTv.setTextColor(Color.parseColor(mPrimaryColor));
-            holder.mToTv.setText("Paid in " + mActivities.get(position).getCreated_at());
+            holder.mToTv.setText("Paid in " + date + " " + time);
 
         }else if (mActivities.get(position).getStatus().equals("RECHARGED")) {
+            date = mActivities.get(position).getCreated_at().substring(0,10);
+            time = mActivities.get(position).getCreated_at().substring(11,19);
             holder.mStatusTv.setText("Recharged");
             holder.mStatusTv.setTextColor(Color.parseColor(mPrimaryColor));
-            holder.mToTv.setText("Recharged in " + mActivities.get(position).getCreated_at());
+            holder.mToTv.setText("Recharged in " + date + " " + time);
         }
 
-        //Loading kamba logo image and setting to the imageview
+        //Loading Kamba logo image and setting to the imageview
         Picasso.get()
                .load(R.drawable.kamba_logo)
                .into(holder.mImageView);
