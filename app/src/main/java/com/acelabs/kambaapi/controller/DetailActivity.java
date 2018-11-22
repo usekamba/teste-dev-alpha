@@ -1,5 +1,6 @@
 package com.acelabs.kambaapi.controller;
 
+import android.graphics.Color;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,6 +20,8 @@ public class DetailActivity extends AppCompatActivity {
     TextView mPhoneNumberTV, mRechargePrice, mAmountOfUttsTv, mValidityDaysTv, mMobOperatorNameTv,
              mMobOperatorTypeTv;
     ConstraintLayout constraintLayout;
+    private String mRedColor = "#EF5350";
+    private String mPrimaryColor = "#00E676";
 
 
     @Override
@@ -30,6 +33,8 @@ public class DetailActivity extends AppCompatActivity {
 
         String transaction_type = getIntent().getExtras().getString("transaction_type");
 
+        //Controlling which transaction was selected
+        // and presenting the right screen to the user 
         if(transaction_type.equals("DEPOSIT")){
 
             // Changing the action bar title to Deposit details
@@ -64,6 +69,7 @@ public class DetailActivity extends AppCompatActivity {
             String to = getIntent().getExtras().getString("to");
             String amount = getIntent().getExtras().getString("amount");
             String description = getIntent().getExtras().getString("description");
+            String status = getIntent().getExtras().getString("status");
             String date = getIntent().getExtras().getString("date");
 
             // Hiding Deposit screen layout
@@ -75,7 +81,7 @@ public class DetailActivity extends AppCompatActivity {
             // Initializing Payment layout views
             initPaymentLayout();
             // Passing data from the intent into payment views
-            setDataToPaymentViews(to, amount, description, date);
+            setDataToPaymentViews(to, amount, description, status, date);
 
         }else if(transaction_type.equals("RECHARGE")){
 
@@ -147,15 +153,23 @@ public class DetailActivity extends AppCompatActivity {
         mToTv = findViewById(R.id.to_txt);
         mAmountTv = findViewById(R.id.amount_txt);
         mDescriptionTv = findViewById(R.id.description_txt);
+        mStatusTv = findViewById(R.id.payment_status_txt);
         mDateTv = findViewById(R.id.date_txt);
     }
 
     // Set data to Payment layout views
-    public void setDataToPaymentViews(String to, String amount, String description, String date){
+    public void setDataToPaymentViews(String to, String amount, String description, String status, String date){
         mToTv.setText(to);
         mAmountTv.setText(amount + " Kz");
         mDescriptionTv.setText(description);
-        mDateTv.setText(date);
+        //Changing the text color according to the status
+        if(status.equals("CANCELLED") || status.equals("CANCELED")){
+            mStatusTv.setTextColor(Color.parseColor(mRedColor));
+        }else{
+            mStatusTv.setTextColor(Color.parseColor(mPrimaryColor));
+        }
+        mStatusTv.setText(status);
+        mDateTv.setText(date.substring(0,10) + " " + date.substring(11,19));
     }
 
     // Hide Payment screen Layout
@@ -190,8 +204,14 @@ public class DetailActivity extends AppCompatActivity {
         mValidityDaysTv.setText(validityDays);
         mMobOperatorNameTv.setText(mobOperatorName);
         mMobOperatorTypeTv.setText(mobOperatorType);
+        //Changing the text color according to the status
+        if(status.equals("CANCELLED") || status.equals("CANCELED")){
+            mStatusTv.setTextColor(Color.parseColor(mRedColor));
+        }else{
+            mStatusTv.setTextColor(Color.parseColor(mPrimaryColor));
+        }
         mStatusTv.setText(status);
-        mDateTv.setText(date);
+        mDateTv.setText(date.substring(0,10) + " " + date.substring(11,19));
     }
 
     // Hide Recharge screen layout
@@ -214,8 +234,14 @@ public class DetailActivity extends AppCompatActivity {
     public void setDataToWithdrawalViews(String amount, String bank, String status, String date){
         mAmountTv.setText(amount + " Kz");
         mBankTv.setText(bank);
+        //Changing the text color according to the status
+        if(status.equals("CANCELLED") || status.equals("CANCELED")){
+            mStatusTv.setTextColor(Color.parseColor(mRedColor));
+        }else{
+            mStatusTv.setTextColor(Color.parseColor(mPrimaryColor));
+        }
         mStatusTv.setText(status);
-        mDateTv.setText(date);
+        mDateTv.setText(date.substring(0,10) + " " + date.substring(11,19));
     }
 
     // Hide Withdrawal screen layout
@@ -244,8 +270,14 @@ public class DetailActivity extends AppCompatActivity {
         mPaymentMethod.setText(paymentMethod);
         mAccountType.setText(accountType);
         mBankTv.setText(bank);
+        //Changing the text color according to the status
+        if(status.equals("CANCELLED") || status.equals("CANCELED")){
+            mStatusTv.setTextColor(Color.parseColor(mRedColor));
+        }else{
+            mStatusTv.setTextColor(Color.parseColor(mPrimaryColor));
+        }
         mStatusTv.setText(status);
-        mDateTv.setText(date);
+        mDateTv.setText(date.substring(0,10) + " " + date.substring(11,19));
     }
 
     // Hide Deposit screen layout

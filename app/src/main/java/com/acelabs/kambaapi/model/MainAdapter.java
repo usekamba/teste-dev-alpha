@@ -114,6 +114,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
                             intent.putExtra("to", clickedDataItem.getTo().getFirstname()+" "+clickedDataItem.getTo().getLastname());
                             intent.putExtra("amount", String.valueOf(clickedDataItem.getAmount()));
                             intent.putExtra("description", clickedDataItem.getDescription());
+                            intent.putExtra("status", clickedDataItem.getStatus());
                             intent.putExtra("date", clickedDataItem.getCreated_at());
 
                             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
