@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5FE067</color>
+    <color name="colorPrimaryDark">#47FF53</color>
+    <color name="colorAccent">#D81B60</color>
+    
+    <color name="analogous_2">#f6f8ff</color>
+
+    <color name="payment_color">#B24C63</color>
+    <color name="deposit_color">#5438DC</color>
+    <color name="withdraw_color">#357DED</color>
+    <color name="tvRecharge_color">#56EEF4</color>
+
+    <color name="backgrounf">#F8F8F8</color>
+</resources>
+<!--
+
+
+<color name="colorPrimary">#5FE067</color>
+<color name="colorPrimaryDark">#47FF53</color>
+<color name="colorAccent">#D81B60</color>-->

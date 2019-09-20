@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_payment"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/payment_color"
+        app:cardCornerRadius="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/idAmount_of_utts"
+                android:layout_marginTop="30dp"
+                android:text="@string/amount"
+                style="@style/textpattern"
+                />
+            <TextView
+                android:id="@+id/idAmount_Unity"
+                android:layout_marginTop="5dp"
+                android:text="2.000,00 kz"
+                style="@style/textpattern"
+               />
+
+            <TextView
+                android:id="@+id/id_name_depos"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="Descrição"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteY="244dp"
+                android:lines="1"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_descritpion_payment"
+                    android:layout_marginTop="5dp"
+                    android:text="Subtotal: "
+                    style="@style/textpattern"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toLeftOf="@+id/idsubtotal"
+                    android:layout_alignParentTop="true"
+
+                    />
+
+                <TextView
+                    android:id="@+id/idsubtotal"
+                    android:layout_marginTop="5dp"
+                    android:text="2000,00 kx"
+                    style="@style/textpattern"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_paymentDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fromUser"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="false"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                tools:src="@tools:sample/avatars[4]" />
+
+            <TextView
+                android:id="@+id/fromUserName"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="@string/name"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/fromUser"
+                android:textColor="@android:color/black"
+                />
+
+           <TextView
+                android:id="@+id/idfromUserName"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="Martin deV"
+                android:textColor="@android:color/black"
+                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="4dp"
+               android:layout_marginStart="150dp"
+               android:layout_alignParentStart="true"
+               />
+            <TextView
+                android:id="@+id/fromUserNumber"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Telefone"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/fromUserName"
+                android:layout_toEndOf="@+id/fromUser"
+                />
+
+            <TextView
+                android:id="@+id/idfromUserNumber"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="XXX XXX XXX"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/idfromUserName"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:id="@+id/fromUserEmail"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Email"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@+id/fromUser"
+                android:layout_below="@+id/fromUserNumber" />
+
+
+            <TextView
+                android:id="@+id/idfromUserEmail"
+                style="@style/textpattern"
+                android:fontFamily="@font/maven_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/devemail"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:lines="2"
+                android:layout_marginStart="150dp"
+                android:layout_below="@+id/idfromUserNumber"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:id="@+id/remetente"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Remetente"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/idfromUserEmail"
+                android:layout_marginTop="8dp"
+                 />
+
+            <View
+                android:id="@+id/view"
+                style="@style/maven_pro"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/darker_gray"
+                android:layout_below="@+id/remetente" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/view"
+                android:layout_marginStart="8dp"
+                tools:src="@tools:sample/avatars[4]"
+                />
+
+            <TextView
+                android:id="@+id/head"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="@string/name"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/photo"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/remetente"
+
+               />
+
+            <TextView
+                android:id="@+id/idtoUserName"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Martin deV"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/remetente"
+                android:layout_marginStart="150dp"
+                android:layout_marginEnd="4dp"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:id="@+id/toUserNumber"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="@string/phone"
+                android:layout_toEndOf="@+id/photo"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/idtoUserName"
+                 />
+
+            <TextView
+                android:id="@+id/idtoUserNumber"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="@string/phone"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/idtoUserName"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="150dp"
+                />
+
+
+            <TextView
+                android:id="@+id/toUserEmail"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:text="@string/email"
+                android:layout_below="@+id/idtoUserNumber"
+                android:layout_toEndOf="@+id/photo"
+                />
+
+
+            <TextView
+                android:id="@+id/idtoUserEmail"
+                style="@style/textpattern"
+                android:fontFamily="@font/maven_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="150dp"
+                android:text="@string/devemail"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/toUserNumber"
+               android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/dest"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Destinatário"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/idtoUserEmail"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/textpattern"
+                android:fontFamily="@font/maven_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="24/09/2019"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/dest"
+                android:layout_marginTop="8dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

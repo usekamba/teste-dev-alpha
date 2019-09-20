@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/maven_pro</item>
+        <item>@font/maven_pro_black</item>
+        <item>@font/maven_pro_bold</item>
+        <item>@font/maven_pro_medium</item>
+    </array>
+</resources>

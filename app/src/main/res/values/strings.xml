@@ -1,0 +1,36 @@
+<resources>
+    <array name="operation_img_list">
+        <item>@drawable/ic_online_payment</item>
+        <item>@drawable/ic_online_deposit</item>
+        <item>@drawable/ic_atm_card</item>
+        <item>@drawable/ic_charge</item>
+    </array>
+    <string name="app_name">TesteKamba</string>
+    <string name="URL">https://kamba-api-staging.herokuapp.com/v1/users/</string>
+    <string name="home">Home</string>
+    <string name="activities">Actividades</string>
+    <string name="user_account">Minha Conta</string>
+    <string name="payment">Pagamentos</string>
+    <string name="deposito">Depósito</string>
+    <string name="withdrawal">Levantamento</string>
+    <string name="withdrawals">Levantamentos</string>
+    <string name="charge">Recarga</string>
+
+    <string name="fulfil">Cumpre uma missão</string>
+    <string name="amount">Quantia</string>
+    <string name="name">Nome</string>
+    <string name="phone">Telefone</string>
+    <string name="email">Email</string>
+    <string name="devemail">martinhocorreiamussamba@gmail.com</string>
+    <string name="dev_first_last_name">Martinho Mussamba</string>
+    <string name="recharge_code">Código de recarga</string>
+    <string name="payment_">Pagamento</string>
+    <string name="actvity">Actvidades</string>
+
+    <string-array name="operation_name_list">
+        <item>Pagamento</item>
+        <item>Depósito</item>
+        <item>Levantamento</item>
+        <item>Recarga</item>
+    </string-array>
+</resources>

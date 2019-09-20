@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/general_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/grid_general"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            />
+
+    <ImageView
+        android:id="@+id/img_error_not_found"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_404_error"
+        android:layout_gravity="center|fill_vertical"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp"
+        />
+    <TextView
+
+        android:id="@+id/text_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No internet connection"
+        android:fontFamily="@font/maven_pro_black"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"/>
+
+</LinearLayout>
