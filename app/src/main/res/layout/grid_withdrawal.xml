@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_payment"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/withdraw_color"
+        android:elevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/idAmount_Unity"
+                style="@style/textpattern"
+                android:layout_marginTop="30dp"
+                android:textSize="18sp"
+                android:text="2.000,00 kz" />
+
+            <TextView
+                android:id="@+id/id_name_depos"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro_medium"
+                android:lines="1"
+                android:text="Descrição"
+                android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/id_descritpion_payment"
+                    style="@style/textpattern"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toLeftOf="@+id/idsubtotal"
+                    android:text="Subtotal: " />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_paymentDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/bank_account"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/maven_pro_black"
+                android:text="Conta Bancária"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/fromUser"
+                android:textColor="@android:color/black"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:id="@+id/iban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bank_account"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                style="@style/textpattern"
+                android:fontFamily="@font/maven_pro"
+                android:textColor="@android:color/black"
+                android:text="IBAN"
+                />
+
+            <TextView
+                android:id="@+id/id_iban_pm"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="XXX XXX XXX"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/bank_account"
+                android:layout_marginStart="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/bank_number"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Número"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/iban"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:id="@+id/id_mobile_operator"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:text="XXX XXX XXX"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/iban"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="150dp"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:id="@+id/holder"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Segurador"
+                android:textColor="@android:color/black"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/bank_number" />
+
+
+
+            <TextView
+                android:id="@+id/idHolder"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:layout_marginBottom="8dp"
+                android:text="@string/dev_first_last_name"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/bank_number"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="150dp"
+                android:layout_alignParentStart="true"
+                />
+            <TextView
+                android:id="@+id/type_of"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/maven_pro"
+                android:text="Tipo de conta"
+                android:textColor="@android:color/black"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/holder" />
+
+
+
+            <TextView
+                android:id="@+id/idtype_of"
+                style="@style/textpattern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/maven_pro"
+                android:layout_marginBottom="8dp"
+                android:text="company"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/holder"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="150dp"
+                android:layout_alignParentStart="true"
+                />
+
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_below="@+id/idtype_of"
+                />
+            
+            <TextView
+                android:id="@+id/bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banco"
+                style="@style/textpattern"
+                android:fontFamily="@font/maven_pro_black"
+                android:layout_below="@+id/view"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                />
+
+            <TextView
+                android:id="@+id/idrecharge_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banco Fomento de Angola"
+                style="@style/textpattern"
+                android:layout_below="@+id/bank"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                />
+
+            <TextView
+                android:id="@+id/idBank_description_ba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banco Fomento de Angola"
+                style="@style/textpattern"
+                android:layout_below="@+id/idrecharge_price"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24/09/1996"
+                style="@style/textpattern"
+                android:fontFamily="@font/maven_pro"
+                android:layout_below="@+id/idBank_description_ba"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
