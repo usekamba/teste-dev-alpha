@@ -1,3 +1,35 @@
+
+# Informação Adicional
+
+Problema: O problema consiste e mostrar todas as actividades de usuário kamba, estas actividades são descritas pelo tipo de transição e elas são: Levantamento, Depósito, Recarga e Pagamento).
+
+Para resolver este teste usei a plataforma Android/Java
+A App fornece uma Activity que possui dois fragmentos, um que mostrada os quatro tipos e transações (Pagamento, Depósito, Levantamento, recarga) e outro que mostra a lista de todas as actividades.
+
+O primeiro fragmento chamado de Fragmento Home, permite aceder a cada uma das transações acima citado.
+
+![alt text](https://github.com/MartinhoMCM/teste-dev-alpha/blob/master/app/src/main/res/drawable-v24/cumpre.jpeg)
+
+![alt text](https://github.com/MartinhoMCM/teste-dev-alpha/blob/master/app/src/main/res/drawable-v24/view_deposit.jpeg)
+
+![alt text](https://github.com/MartinhoMCM/teste-dev-alpha/blob/master/app/src/main/res/drawable-v24/view_payment.jpeg)
+
+![alt text](https://github.com/MartinhoMCM/teste-dev-alpha/blob/master/app/src/main/res/drawable-v24/view_recharge.jpeg)
+
+![alt text](https://github.com/MartinhoMCM/teste-dev-alpha/blob/master/app/src/main/res/drawable-v24/view_payment.jpeg)
+
+Fragmento de actividades
+
+![alt text](https://github.com/MartinhoMCM/teste-dev-alpha/blob/master/app/src/main/res/drawable-v24/all_activities.jpeg)
+
+#Desenvolvi um fragmento home porque possibilita o usuário a consultar apenas a operação deseja. Exemplo mostrar todas actividades relacionadas a Pagamento.
+
+
+
+
+
+
+
 ![Kamba](app-logo.png)
 
 # Teste Alpha - Devs 
