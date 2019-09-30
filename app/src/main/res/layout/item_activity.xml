@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/payment_op"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_user"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_toEndOf="@+id/photo"
+            android:text="Dev "
+            android:textStyle="bold"
+            style="@style/activity_style"
+            />
+        <TextView
+            android:id="@+id/subhead_amount"
+            android:text="1000"
+            style="@style/activity_style_1"
+            android:layout_below="@+id/head"
+
+            />
+        <TextView
+            android:id="@+id/subhead2"
+            android:text=""
+            android:layout_toEndOf="@+id/photo"
+            style="@style/activity_style_2" />
+
+        <TextView
+            android:id="@+id/subhead1"
+            style="@style/activity_style"
+            android:text=""
+            android:fontFamily="@font/maven_pro"
+            android:layout_below="@+id/subhead2"
+            android:layout_toEndOf="@+id/photo"
+            android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

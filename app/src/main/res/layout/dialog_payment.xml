@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dialog_from"
+        style="@style/activity_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/maven_pro"
+        android:text="Recebeste de Kamba "
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dialog_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro"
+        android:text="KZ 500, 00"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_fee"
+        android:fontFamily="@font/maven_pro"
+        android:text="Sem taxas adicionais"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dialog_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro"
+        android:text="12/08/1996 15:41"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_description"
+        android:fontFamily="@font/maven_pro"
+        android:text="Cafe da manha "
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/dialog_paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maven_pro"
+        android:text="PAGO"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+
+        />
+
+    <Button
+         android:id="@+id/dialog_ok"
+        android:text="OK"
+        android:layout_gravity="end"
+        style="@style/button_patter"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
