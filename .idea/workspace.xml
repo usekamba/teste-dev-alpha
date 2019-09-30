@@ -221,7 +221,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/activities/teamcontroller/mvcController.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+              <caret line="146" column="49" selection-start-line="146" selection-start-column="49" selection-end-line="146" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -464,9 +464,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="713" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32956383" />
+      <window_info content_ui="combo" id="Project" visible="true" weight="0.32956383" />
       <window_info id="Structure" side_tool="true" />
       <window_info id="Build Variants" side_tool="true" />
       <window_info id="Image Layers" />
@@ -475,12 +474,12 @@
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Run" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Run" weight="0.32850242" />
       <window_info anchor="bottom" id="Logcat" weight="0.61513686" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32850242" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32850242" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Build" weight="0.32850242" />
@@ -525,7 +524,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/activities/teamcontroller/mvcController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+          <caret line="146" column="49" selection-start-line="146" selection-start-column="49" selection-end-line="146" selection-end-column="49" />
         </state>
       </provider>
     </entry>
