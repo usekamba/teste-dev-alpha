@@ -1,6 +1,10 @@
 
 # teste
 
+Nome : Martinho Correia Mussamba,  Mobile Developer
+Email:martinhocorreiamussamba@gmail.com
+Telefone:946691711
+
 A app mostra uma lista de actividades, estas actividades são fornecidas por API.
 
 Ao abrir a app se pode ver uma lista de actividades:
