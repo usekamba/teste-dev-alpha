@@ -4,7 +4,7 @@
 Nome : Martinho Correia Mussamba
 Mobile Developer
 Email:martinhocorreiamussamba@gmail.com
-Telefone:946691711
+Telefone: 946691711 / 995 356 376
 
 A app mostra uma lista de actividades, estas actividades são fornecidas por API.
 
