@@ -1,7 +1,8 @@
 
 # teste
 
-Nome : Martinho Correia Mussamba,  Mobile Developer
+Nome : Martinho Correia Mussamba
+Mobile Developer
 Email:martinhocorreiamussamba@gmail.com
 Telefone:946691711
 
