@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/dialog_deposit_ask"
+        android:text="Referência de pedido"
+        style="@style/dialog_text_style_1" />
+
+    <TextView
+        android:id="@+id/dialog_reference_id"
+        android:text="111111111111111111111111111111111111111"
+        android:layout_toEndOf="@+id/dialog_deposit_ask"
+        style="@style/dialog_text_style_2" />
+
+    <TextView
+        android:id="@+id/dialog_date"
+        android:text="Data"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_deposit_ask"
+        />
+
+    <TextView
+        android:id="@+id/dialog_date_id"
+        android:text="06/09/2019 07:16"
+        android:layout_toEndOf="@+id/dialog_deposit_ask"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@id/dialog_deposit_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_amount_deposited"
+        android:text="Valor depositado"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_date"
+        />
+
+    <TextView
+        android:id="@+id/dialog_amount_deposited_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_date"
+        android:gravity="start"
+        android:text="200, 0 kz"
+        android:layout_toEndOf="@id/dialog_deposit_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_bank_name"
+        android:text="Banco"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_amount_deposited"
+        />
+
+    <TextView
+        android:id="@+id/dialog_bank_name_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_amount_deposited"
+        android:gravity="start"
+        android:text="Banco Millenium de Antlântico"
+        android:layout_toEndOf="@id/dialog_deposit_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_bank_account"
+        android:text="Conta Bancária"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_bank_name"
+        />
+
+    <TextView
+        android:id="@+id/dialog_bank_account_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_bank_name"
+        android:gravity="start"
+        android:text="12223344444444444444"
+        android:layout_toEndOf="@id/dialog_deposit_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_holder"
+        android:text="Titular "
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_bank_account"
+        />
+
+    <TextView
+        android:id="@+id/dialog_holder_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_bank_account"
+        android:gravity="start"
+        android:text="The Believer"
+        android:layout_toEndOf="@id/dialog_deposit_ask"/>
+    <TextView
+        android:id="@+id/dialog_transaction_type"
+        android:text="Tipo de transação "
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_holder"
+        />
+
+
+    <TextView
+        android:id="@+id/dialog_transaction_type_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_holder"
+        android:gravity="start"
+        android:text="The Believer"
+        android:layout_toEndOf="@id/dialog_deposit_ask"/>
+
+
+
+    <Button
+        android:id="@+id/dialog_deposit_ok"
+        style="@style/button_patter"
+        android:text="OK"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"/>
+
+
+
+</RelativeLayout>

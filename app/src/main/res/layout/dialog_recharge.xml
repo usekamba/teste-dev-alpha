@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dialog_reference_ask"
+        android:text="Referência de pedido"
+        style="@style/dialog_text_style_1" />
+
+    <TextView
+        android:id="@+id/dialog_reference_id"
+        android:text="111111111111111111111111111111111111111"
+        android:layout_toEndOf="@+id/dialog_reference_ask"
+        style="@style/dialog_text_style_2" />
+
+    <TextView
+        android:id="@+id/dialog_date"
+        android:text="Data"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_reference_ask"
+       />
+
+    <TextView
+        android:id="@+id/dialog_date_id"
+        android:text="06/09/2019 07:16"
+        android:layout_toEndOf="@+id/dialog_reference_ask"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@id/dialog_reference_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_operator"
+        android:text="Operadora"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_date"
+        />
+
+    <TextView
+        android:id="@+id/dialog_operator_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_date"
+        android:gravity="start"
+        android:text="MOVICEL"
+        android:layout_toEndOf="@id/dialog_reference_ask"/>
+
+
+    <TextView
+        android:id="@+id/dialog_utts"
+        android:text="UTT"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_operator"
+        />
+
+    <TextView
+        android:id="@+id/dialog_utts_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_operator"
+        android:gravity="start"
+        android:text="100 UTT"
+        android:layout_toEndOf="@id/dialog_reference_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_recharge_price"
+        android:text="Valor da Recarga"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_utts"
+        />
+
+    <TextView
+        android:id="@+id/dialog_recharge_price_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_utts"
+        android:gravity="start"
+        android:text="700,0 kz"
+        android:layout_toEndOf="@id/dialog_reference_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_recharge_code"
+        android:text="Código da Recarga"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_recharge_price"
+        />
+
+    <TextView
+        android:id="@+id/dialog_recharge_code_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_recharge_price"
+        android:gravity="start"
+        android:text="1234567891234"
+        android:layout_toEndOf="@id/dialog_reference_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_recharge_validaty"
+        android:text="Validade"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_recharge_code"
+        />
+
+    <TextView
+        android:id="@+id/dialog_recharge_validaty_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_recharge_code"
+        android:gravity="start"
+        android:text="10 dias"
+        android:layout_toEndOf="@id/dialog_reference_ask"/>
+
+    <TextView
+        android:id="@+id/dialog_recharge_amount_paid"
+        android:text="Total pago"
+        style="@style/dialog_text_style_1"
+        android:layout_below="@+id/dialog_recharge_validaty"
+        />
+
+    <TextView
+        android:id="@+id/dialog_recharge_amount_paid_id"
+        style="@style/dialog_text_style_2"
+        android:layout_below="@+id/dialog_recharge_validaty"
+        android:gravity="start"
+        android:text="900,0 kz"
+        android:layout_toEndOf="@id/dialog_reference_ask"/>
+
+    <Button
+        android:id="@+id/dialog_ok"
+        style="@style/button_patter"
+        android:text="OK"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
