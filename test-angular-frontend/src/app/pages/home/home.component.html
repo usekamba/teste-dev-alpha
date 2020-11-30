@@ -6,17 +6,56 @@
 </p>
 
 <section>
-    <mat-card class="example-card mat-elevation-z5">
+    <mat-card>
         <mat-card-header>
-            <div mat-card-avatar class="example-header-image"><img src="assets/images/app-logo.png" style="width: 50px;border-radius: 50px;"></div>
-            <mat-card-title>Shiba Inu</mat-card-title>
-            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+            <mat-card-title>
+                <h1>Pagamentos</h1>
+            </mat-card-title>
         </mat-card-header>
-        <mat-card-content>
-            <br>
-            <p>
-                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-            </p>
+        <mat-card-content *ngFor="let payment of transactions.activities.payments">
+            <mat-card class="example-card mat-elevation-z5">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"><img src="assets/images/app-logo.png" style="width: 50px;border-radius: 50px;"></div>
+                    <mat-card-title>De: {{ payment.from.firstname + ' ' + payment.from.lastname }}</mat-card-title>
+                    <mat-card-subtitle>Para: {{ payment.to.firstname + ' ' + payment.to.lastname }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <br>
+                    <p>
+                        <strong>Montante: </strong> {{ payment.amount }}
+                        <strong>Descrição: </strong> {{ payment.description }}
+                    </p>
+                    <br>
+                    <button mat-button color="primary">Detalhes</button>
+                </mat-card-content>
+            </mat-card>
+        </mat-card-content>
+    </mat-card>
+    <br>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <h1>Depósitos</h1>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content *ngFor="let deposit of transactions.activities.deposits">
+            <mat-card class="example-card mat-elevation-z5">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"><img src="assets/images/app-logo.png" style="width: 50px;border-radius: 50px;"></div>
+                    <mat-card-title>De: {{ deposit.company_bank_account.holder }}</mat-card-title>
+                    <mat-card-subtitle>{{ deposit.payment_method.name }}
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <br>
+                    <p>
+                        <strong>Montante: </strong> {{ deposit.amount }}
+                        <strong>Descrição: </strong> {{ deposit.payment_method.description }}
+                    </p>
+                    <br>
+                    <button mat-button color="primary">Detalhes</button>
+                </mat-card-content>
+            </mat-card>
         </mat-card-content>
     </mat-card>
 </section>
