@@ -48,7 +48,7 @@ jobs:
           PGUSER: postgres
           RAILS_ENV: test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-          TODOAPP_DEV_DATABASE_PASSWORD: postgres
+          TESTRAILSBACKEND_DEV_DATABASE_PASSWORD: postgres
         run: |
           bundle exec rails db:prepare
           bundle exec rspec
