@@ -11,7 +11,6 @@ import {
     Observable,
     throwError
 } from 'rxjs';
-import { Transaction } from '../interfaces/transaction.interface';
 
 @Injectable({
     providedIn: 'root'

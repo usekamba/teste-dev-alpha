@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { KambaService } from '../../services/kamba.service';
-import { Transaction } from '../../interfaces/transaction.interface';
 
 @Component({
     selector: 'app-home',
