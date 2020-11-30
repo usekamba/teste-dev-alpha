@@ -27,15 +27,6 @@ class Api::V1::KambasController < ApplicationController
                     when "TVRECHARGE"
                         @tvrecharges << object
                 end
-                # if obejct["transaction_type"] == "PAYMENT"
-                #     @payment << obejct
-                # elsif obejct["transaction_type"] == "WITHDRAWAL"
-                #     @withdrawal << obejct
-                # elsif obejct["transaction_type"] == "DEPOSIT"
-                #     @deposit << obejct
-                # elsif obejct["transaction_type"] == "TVRECHARGE"
-                #     @tvrecharge << obejct                         
-                # end
             end            
         end
 end
