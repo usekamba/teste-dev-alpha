@@ -1,4 +1,4 @@
-![Kamba](../app-logo.png)
+![Kamba](app-logo.png)
 
 # Teste Alpha - Devs 
 
