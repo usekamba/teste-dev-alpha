@@ -1,0 +1,2 @@
+class Kamba < ApplicationRecord
+end
