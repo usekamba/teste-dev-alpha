@@ -119,7 +119,6 @@ A URL a seguir mostra a listagem de resultados das atividades de transações de
 Esse projeto foi desenvolvido utilizando:
 - [Ruby on Rails](https://rubyonrails.org/)
 - [PostgreSQL](https://www.postgresql.org/)
-- [Boostrap](https://getbootstrap.com)
 
 ## :rocket: Como Executar a Aplicação
 
