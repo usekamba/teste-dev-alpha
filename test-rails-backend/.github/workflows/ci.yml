@@ -1,0 +1,54 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:12
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: test_rails_backend_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@master
+      - name: Setup Ruby 2.7
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 2.7.x
+      - name: Cache gems
+        uses: actions/cache@v1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt-get -yqq install libpq-dev
+          gem install bundler
+          bundle install --jobs 4 --retry 3
+      - name: Run tests
+        env:
+          DATABASE_URL: postgres://postgres:@localhost:5432/test
+          PGHOST: 127.0.0.1
+          PGUSER: postgres
+          RAILS_ENV: test
+          RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
+          TODOAPP_DEV_DATABASE_PASSWORD: postgres
+        run: |
+          bundle exec rails db:prepare
+          bundle exec rspec
