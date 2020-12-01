@@ -1,27 +1,27 @@
-# TestAngularFrontend
+![Kamba](src/assets/images/app-logo.png)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+# Teste Alpha - Devs 
 
-## Development server
+**Frontend Demo:** [HerokuApp](http://kamba-test-angular.herokuapp.com/)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**Dev Web Fullstack:** A solução deve ser implementada usando qualquer linguagem de programação server-side como **PHP, Ruby On Rails (ganha mais pontos) ou Java**. A solução deve ser implementada usando algum Framework JavaScript como **Angular, React, Vue**, entre outros no lado do Cliente. Frameworks no Layout também são permitidos, Bootstrap, Zurb, entre outros.
 
-## Code scaffolding
+## :clipboard: Descrição do projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> A App a seguir mostra a listagem de resultados das atividades de transações de um Usuário.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## :computer: Tecnologias
 
-## Running unit tests
+Esse projeto foi desenvolvido utilizando:
+- [Angular](https://angular.io/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :rocket: Como Executar a Aplicação
 
-## Running end-to-end tests
+- Faça um `git clone` do repositório;
+- Instale todas as dependências executando o comando `yarn` no seu terminal;<br>
+- Em seguida rode o seguinte comando para iniciar a aplicação
+    - `ng serve`;
+- Acesse a URL `localhost:4200`;
+- Divirta-se :smile:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
