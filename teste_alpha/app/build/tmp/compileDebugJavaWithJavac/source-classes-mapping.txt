@@ -1,0 +1,2 @@
+com/filomenadeveloper/teste_alpha/BuildConfig.java
+ com.filomenadeveloper.teste_alpha.BuildConfig
