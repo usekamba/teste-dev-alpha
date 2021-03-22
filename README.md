@@ -1,3 +1,28 @@
+
+Nome : Maria Filomena Pascoal 
+Email:filomenadeveloper@gmail.com 
+Telefone: 928161693
+
+A app mostra uma lista de actividades, estas actividades são fornecidas por API.
+
+Ao abrir a app se pode ver uma lista de actividades:
+
+![activities](screenshot_0.png)
+
+Ao clicar em um depósito:
+
+![activities_deposit](screenshot_1.png)
+
+Ao clicar em um pagamento:
+
+![activities_payment](screenshot_2.png)
+
+Ao clicar em um levantamento:
+
+![activities_withdrawal](screenshot_3.png)
+
+Tecnologias usadas Android/Koltin e Retrofit.
+
 ![Kamba](app-logo.png)
 
 # Teste Alpha - Devs 
